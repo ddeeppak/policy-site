@@ -3,6 +3,7 @@ import Navigation from "./navigation/navigation3";
 import './css/Profile.css';
 import Footer from "./Footer";
 
+const url="https://policy-api.onrender.com/";
 const Profile = () => {
     useEffect(() => {
         if (!localStorage.getItem('Token')) {
@@ -37,7 +38,7 @@ const Profile = () => {
             formData.append('amount', amount);
             formData.append('attachment', attachment);
     
-            const response = await fetch('http://localhost:5000/Claims', {
+            const response = await fetch(url+'Claims', {
                 method: 'POST',
                 headers: {
                     'Authorization': localStorage.getItem('Token')
@@ -58,7 +59,7 @@ const Profile = () => {
     
     async function fetchClaimsData() {
         try {
-            const response = await fetch('http://localhost:5000/UserClaims',{
+            const response = await fetch(url+'UserClaims',{
                 headers: {
                     'Content-Type': 'application/json',
                     'authorization': localStorage.getItem('Token')
@@ -113,7 +114,7 @@ const Profile = () => {
 
     async function withdraw(id) {
         try {
-            const response = await fetch('http://localhost:5000/Claims/withdraw/'+id, {
+            const response = await fetch(url+'Claims/withdraw/'+id, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'Application/json',
@@ -128,7 +129,7 @@ const Profile = () => {
 
     async function userdata(){
         try {
-            const response = await fetch('http://localhost:5000/policyData',{
+            const response = await fetch(url+'policyData',{
                 headers: {
                     'Content-Type': 'application/json',
                     'authorization': localStorage.getItem('Token')
