@@ -105,7 +105,7 @@ const Profile = () => {
 
                 const updateButton = document.createElement('button');
                 updateButton.textContent = 'UPDATE';
-                updateButton.addEventListener('click', () => updateClaim(claim.ID));
+                // updateButton.addEventListener('click', () => updateClaim(claim.ID));
                 actionCell.appendChild(updateButton);
             }
         });
