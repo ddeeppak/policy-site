@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import AdminNavigator from '../AdminNavigation';
 import '../css/ClaimsManagement.css';
 
+const url="https://policy-api.onrender.com/";
 const ClaimsManagement = () => {
     const [user, setUser] = useState({});
     const [newStatus, setNewStatus] = useState('');
@@ -14,7 +15,7 @@ const ClaimsManagement = () => {
 
     async function fetchClaimsData() {
         try {
-            const response = await fetch('http://localhost:5000/Claims',{
+            const response = await fetch(url+'Claims',{
                 headers: {
                     'Content-Type': 'application/json',
                     'authorization': localStorage.getItem('Token')
@@ -68,7 +69,7 @@ const ClaimsManagement = () => {
 
     async function deleteClaim(id){
         try{
-            const response = await fetch('http://localhost:5000/Claims',{
+            const response = await fetch(url+'Claims',{
                 method:'DELETE',
                 headers:{
                     'Content-Type':'Application/json',
@@ -92,7 +93,7 @@ const ClaimsManagement = () => {
         document.getElementById('update-claim').style.display = 'block';
         document.getElementById('overlay').style.display = 'block';
         try{
-            const response = await fetch(`http://localhost:5000/Claims/${id}`,{
+            const response = await fetch(url+`Claims/${id}`,{
                 headers: {
                     'Content-Type': 'application/json',
                     'authorization': localStorage.getItem('Token')
@@ -120,7 +121,7 @@ const ClaimsManagement = () => {
         const type = document.getElementById('ctype').innerText;
         console.log(cid,id,status,amount,type);
         try{
-            const response = await fetch('http://localhost:5000/Claims',{
+            const response = await fetch(url+'Claims',{
                 method:'PATCH',
                 headers :{
                     'Content-Type': 'application/json',
@@ -171,7 +172,7 @@ const ClaimsManagement = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/Claims', {
+            const response = await fetch(url+'Claims', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
