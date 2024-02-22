@@ -2,6 +2,8 @@ import './css/login.css';
 import Navigation from "./navigation/Navigation1";
 import React, { useState } from 'react';
 
+const url="https://policy-api.onrender.com/";
+
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -13,7 +15,7 @@ const Login = () => {
       password: password
     };
     try {
-      const response = await fetch('http://localhost:5000/login', {
+      const response = await fetch(url+'login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
