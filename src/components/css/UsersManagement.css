@@ -1,0 +1,62 @@
+.sub-three{
+    width: 90%;
+    height: auto;
+    min-height: 50vh;
+    border: 1px solid black;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+table{
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    border: 1px solid black;
+}
+th{
+    width: 5%;
+}
+/* .mainlayout{
+    width: 1200px;
+} */
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Half of the screen width */
+    max-width: 400px; /* Limiting maximum width */
+    z-index: 1000;
+}
+
+.popup-container p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.popup-container input,
+.popup-container select,
+.popup-container button {
+    margin: 5px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.popup-container button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.popup-container button:hover {
+    background-color: #0056b3;
+}

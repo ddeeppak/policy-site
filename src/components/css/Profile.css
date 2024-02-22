@@ -1,0 +1,155 @@
+/* Add these styles to your existing CSS */
+
+.Policy-Container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(195, 197, 197);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pts1 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+.policy {
+    margin-left: 30px;
+    column-count: 2; /* Set the number of columns */
+    column-gap: 20px; /* Adjust the gap between columns */
+}
+
+.policy p {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.policy strong {
+    margin-right: 10px;
+}
+
+
+.Claims-Container {
+    width: 90%;
+    height: 400px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(208, 208, 208);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.claims {
+    width: 90%;
+    height: 80%;
+    background-color: azure;
+    overflow-y: auto;
+}
+
+.claimmng {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#addclaim {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 0px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+.popup-container h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.popup-container label {
+    font-weight: bold;
+}
+
+.popup-container select,
+.popup-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.popup-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-container button.cancel {
+    margin-left: 10px;
+    background-color: #ccc;
+}
+
+.popup-container button:hover {
+    background-color: #45a049;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}

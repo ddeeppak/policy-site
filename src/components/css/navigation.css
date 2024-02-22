@@ -1,0 +1,49 @@
+.navi-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #fff;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.227);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu button {
+    width: 120px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.menu button + a {
+    margin-left: 10px;
+}
+
+.zoom-img {
+    margin-left: 50px;
+    scale: 2;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .zoom-img:hover {
+    transform: scale(1.1);
+  }
+  

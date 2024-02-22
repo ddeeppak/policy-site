@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.loginlayout {
+    text-align: center;
+    background-image: linear-gradient(rgb(234, 217, 217),rgb(211, 244, 247));
+    width: 500px;
+    margin: 20vh auto;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(142, 140, 140);
+}
+
+
+/* Add these styles to your existing CSS */
+
+.loginlayout h1 {
+    color: rgb(149, 149, 149);
+    font-weight: bolder;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1ch;
+}
+form p {
+    color: rgb(140, 23, 23);
+    font-weight: normal;
+    font-family: "Bebas Neue", sans-serif;
+}
+form input {
+    font-size: 12px;
+}
+
+.loginlayout form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginlayout p {
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+}
+
+.loginlayout input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.loginlayout button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginlayout button:hover {
+    background-color: #45a049;
+}

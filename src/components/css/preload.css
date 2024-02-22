@@ -1,0 +1,26 @@
+#preload {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden !important;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    @media (max-width: 767px) {
+        font-size: 17px;
+        width: 240px;
+    }
+    
+}
