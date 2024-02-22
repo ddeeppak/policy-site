@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AdminNavigator from '../AdminNavigation';
 import '../css/UsersManagement.css';
 
+const url="https://policy-api.onrender.com/";
 const UsersManagement = () => {
 
     useEffect(() => {
@@ -13,7 +14,7 @@ const UsersManagement = () => {
         document.getElementById('update-pop').style.display = 'block';
         document.getElementById('overlay').style.display = 'block';
         try {
-            const response = await fetch('http://localhost:5000/Users/' + id, {
+            const response = await fetch(url+'Users/' + id, {
                 headers: {
                     'Content-Type': 'application/json',
                     'authorization': localStorage.getItem('Token')
@@ -37,7 +38,7 @@ const UsersManagement = () => {
         const email = document.getElementById('demail').value;
         const amount = parseFloat(document.getElementById('damount').value);
         try {
-            const response = await fetch('http://localhost:5000/Users', {
+            const response = await fetch(url+'Users', {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -60,7 +61,7 @@ const UsersManagement = () => {
 
     async function deleteUser(id) {
         try {
-            const response = await fetch('http://localhost:5000/Users', {
+            const response = await fetch(url+'Users', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'Application/json',
@@ -76,7 +77,7 @@ const UsersManagement = () => {
 
     async function fetchUsersData() {
         try {
-            const response = await fetch('http://localhost:5000/Users', {
+            const response = await fetch(url+'Users', {
                 headers: {
                     'Content-Type': 'application/json',
                     'authorization': localStorage.getItem('Token')
@@ -150,7 +151,7 @@ async function createUser() {
         "password": password
     };
     try {
-        const response = await fetch('http://localhost:5000/Users', {
+        const response = await fetch(url+'Users', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
