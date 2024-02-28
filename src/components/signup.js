@@ -28,6 +28,7 @@ const Signup = () =>{
                 },
                 body: JSON.stringify(data)
             });
+            window.alert("Registration is Successful, Check Your Email");
         } catch (error) {
             console.error(error);
         }
