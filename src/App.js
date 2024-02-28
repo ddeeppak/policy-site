@@ -8,6 +8,7 @@ import AdminProfile from './components/AdminProfile';
 import Preload from './components/Preload';
 import ClaimsManagement from './components/admin/ClamsManagement'
 import UsersManagement from './components/admin/UsersManagement';
+import Signup from './components/signup';
 import NotFound from './NotFound';
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path='/Admin' element={<AdminProfile />}/>
               <Route path='/Admin/manage-claims' element={<ClaimsManagement />}/>
               <Route path='/Admin/manage-users' element={<UsersManagement />}/>
+              <Route path='/signup' element={<Signup />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Router>
