@@ -1,0 +1,66 @@
+.layout{
+    background-image: linear-gradient(30deg,rgb(229, 255, 168),rgb(211, 244, 247));
+    width: 500px;
+    margin: 20vh auto;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout button {
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+
+.layout h3 {
+    text-align: center;
+    color: rgb(0, 200, 255);
+    font-weight: bolder;
+    font-family: "Bebas Neue", sans-serif;
+}
+form p {
+    color: rgb(140, 23, 23);
+    font-weight: normal;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: left;
+}
+form input {
+    font-size: 12px;
+}
+
+.layout form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout p {
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+}
+
+.layout input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.layout button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.layout button:hover {
+    background-color: #45a049;
+}
